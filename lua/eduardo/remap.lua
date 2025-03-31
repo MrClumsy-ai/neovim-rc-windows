@@ -25,8 +25,8 @@ vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
 -- move 10
-vim.keymap.set("n", "J", "10jzz")
-vim.keymap.set("n", "K", "10kzz")
+--[[ vim.keymap.set("n", "J", "10jzz")
+vim.keymap.set("n", "K", "10kzz") ]]
 
 -- move selected text with J or K
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
