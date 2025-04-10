@@ -45,4 +45,4 @@ vim.api.nvim_create_autocmd("LspAttach", {
 })
 
 -- show errors inline
-vim.diagnostic.config({ virtual_lines = true })
+vim.diagnostic.config({ virtual_text = true })
