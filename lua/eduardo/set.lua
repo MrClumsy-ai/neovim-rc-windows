@@ -27,13 +27,13 @@ vim.opt.updatetime = 50
 vim.g.mapleader = " "
 
 vim.api.nvim_create_autocmd("TextYankPost", {
-  desc = "highlight when yanking text",
-  group = vim.api.nvim_create_augroup("kickstart-highlight-yank", { clear = true }),
-  callback = function()
-    vim.highlight.on_yank()
-  end
+	desc = "highlight when yanking text",
+	group = vim.api.nvim_create_augroup("kickstart-highlight-yank", { clear = true }),
+	callback = function()
+		vim.highlight.on_yank()
+	end,
 })
-
+--[[
 -- lsp completion
 vim.api.nvim_create_autocmd("LspAttach", {
   callback = function(ev)
@@ -43,6 +43,6 @@ vim.api.nvim_create_autocmd("LspAttach", {
     end
   end
 })
-
+]]
 -- show errors inline
 vim.diagnostic.config({ virtual_text = true })
