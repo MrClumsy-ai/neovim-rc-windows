@@ -49,6 +49,12 @@ lspconfig.css_variables.setup({
 	capabilities = capabilities,
 })
 
+lspconfig.emmet_ls.setup({
+	on_attach = on_attatch,
+	filetypes = { "html", "tmpl", "templ" },
+	capabilities = capabilities,
+})
+
 lspconfig.eslint.setup({
 	on_attach = on_attatch,
 	capabilities = capabilities,
@@ -61,6 +67,7 @@ lspconfig.gopls.setup({
 
 lspconfig.html.setup({
 	on_attach = on_attatch,
+	filetypes = { "html", "tmpl" },
 	capabilities = capabilities,
 })
 
@@ -90,6 +97,10 @@ lspconfig.rust_analyzer.setup({
 			},
 		},
 	},
+})
+lspconfig.templ.setup({
+	on_attach = on_attatch,
+	capabilities = capabilities,
 })
 
 lspconfig.ts_ls.setup({
